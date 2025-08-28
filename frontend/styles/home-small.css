@@ -1,0 +1,45 @@
+.hamburger {
+    display: flex;
+    width: 36px;
+    height: 36px;
+}
+
+.hamburger span {
+    width: 24px;
+    height: 3px;
+    margin: 4px 0;
+    background: var(--text, #333);
+}
+
+.nav-links {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 1rem;
+    background: #fff;
+    flex-direction: column;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.12);
+    border-radius: 0.8rem;
+    padding: 1rem 1.5rem;
+    z-index: 1000;
+}
+
+.nav-links.open {
+    display: flex;
+}
+
+.profile-intro-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.responsive-profile-img {
+    width: 140px;
+    height: 140px;
+}
+
+.intro {
+    padding: 1rem;
+    font-size: 1rem;
+}

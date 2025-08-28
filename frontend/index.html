@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="A showcase of my work, skills, and projects.">
+    <meta name="keywords" content="Portfolio, Web Developer, Projects, Skills, Resume">
+    <meta name="author" content="Your Name">
+    <!-- Social Media Meta Tags -->
+    <meta property="og:title" content="Your Portfolio">
+    <meta property="og:description" content="A showcase of my work, skills, and projects.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://your-portfolio-url.com">
+    <meta property="og:image" content="https://your-portfolio-url.com/preview.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Your Portfolio">
+    <meta name="twitter:description" content="A showcase of my work, skills, and projects.">
+    <meta name="twitter:image" content="https://your-portfolio-url.com/preview.jpg">
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles/home-medium.css" media="(max-width: 900px) and (min-width: 481px)">
+    <link rel="stylesheet" href="styles/home-small.css" media="(max-width: 480px)">
+</head>
+<body>
+   <header id="site-header"></header>
+
+   <main>
+    <div class="profile-intro-wrapper">
+      <section class="profile-image">
+        <picture>
+          <source srcset="images/headshot-small.jpg" media="(max-width: 480px)">
+          <source srcset="images/headshot-medium.jpg" media="(max-width: 800px)">
+          <img src="images/headshot-large.jpg" alt="Farai Dandara" class="responsive-profile-img">
+        </picture>
+      </section>
+
+      <section class="intro">
+        <span class="tagline">Code. Analyze. Reflect. Repeat.</span>
+        <h1>Bio</h1>
+        <p>
+          I’m Farai Dandara — a strategic learner and facilitator working at the intersection of tech, analysis, and spiritual reflection. I build responsive web projects, lead thoughtful group discussions, and use structured learning methods to grow with intention. This portfolio is where I document progress, share insights, and explore how clarity and purpose shape the work I do.
+        </p>
+        <div class="social-buttons">
+          <a href="https://www.linkedin.com/in/your-linkedin" target="_blank" class="social-btn" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+            <span class="social-text">LinkedIn</span>
+          </a>
+          <a href="https://github.com/your-github" target="_blank" class="social-btn" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+            <span class="social-text">GitHub</span>
+          </a>
+          <a href="https://twitter.com/your-twitter" target="_blank" class="social-btn" aria-label="Twitter">
+            <i class="bi bi-twitter-x"></i>
+            <span class="social-text">Twitter/X</span>
+          </a>
+          <div class="cta-buttons">
+            <a href="#projects" class="btn-primary">
+              <i class="fas fa-folder-open"></i>
+              <span class="cta-text">Explore My Work</span>
+            </a>
+            <a href="#contact" class="btn-secondary">
+              <i class="fas fa-envelope"></i>
+              <span class="cta-text">Let’s Connect</span>
+            </a>
+          </div>
+        </div>
+      </section>
+   </div>
+   </main>
+<footer id="site-footer"></footer>
+  <script type="module" src="scripts/index.js"></script>
+</body>
+</html>

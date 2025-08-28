@@ -1,0 +1,293 @@
+:root {
+    /* Bright & Friendly Theme Variables */
+    --bg: #F5F5F5;
+    --text: #333333;
+    --accent: #f9dcda;
+    --btn-hover: #f89d95;
+    --link: #007ACC;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+}
+
+a {
+    text-decoration: none;
+    color: var(--link);
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.navbar {
+    background: transparent;
+    box-shadow: none;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem; /* Add space below navbar */
+}
+ .navbar h2{
+    color: var(--text);
+    font-size: 1.5rem;
+    font-weight: 600;
+ }
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-right: 0;
+}
+
+.nav-links li a {
+    color: var(--text);
+    background: transparent;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    transition: background 0.3s, color 0.3s;
+    font-weight: 500;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+    background: var(--btn-hover);
+    color: #fff;
+}
+
+.profile-intro-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 3rem;
+    margin: 2rem;
+}
+
+.profile-image {
+    flex-shrink: 0;
+}
+
+.responsive-profile-img {
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.intro {
+    max-width: 700px;
+    padding: 2rem;
+    background: rgb(255, 255, 255, 0.2);
+    border-radius: 1rem;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+}
+
+.tagline {
+    display: block;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 0.5rem;
+    letter-spacing: 1px;
+}
+
+.intro h1 {
+    font-size: 2rem;
+    color: var(--text);
+    margin-bottom: 1rem;
+}
+
+.intro p {
+    font-size: 1.1rem;
+    color: var(--text);
+    line-height: 1.7;
+    margin-bottom: 2rem;
+}
+
+.social-buttons {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.social-btn,
+.cta-buttons a {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.7rem;
+    border-radius: 50%;
+    font-size: 1.3rem;
+    background: var(--accent);
+    color: var(--link);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 48px;
+    height: 48px;
+    transition: width 0.3s, background 0.3s, color 0.3s;
+    overflow: hidden;
+    text-decoration: none;
+    font-weight: 600;
+    vertical-align: middle;
+}
+
+.social-btn i,
+.cta-buttons a i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+.social-btn .social-text {
+    opacity: 0;
+    max-width: 0;
+    margin-left: 0.5rem;
+    transition: opacity 0.3s, max-width 0.3s;
+    white-space: nowrap;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.social-btn:hover {
+    width: 180px;
+    border-radius: 2rem;
+    background: var(--btn-hover);
+}
+
+.social-btn:hover .social-text {
+    opacity: 1;
+    max-width: 140px;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.cta-buttons a .cta-text {
+    opacity: 0;
+    max-width: 0;
+    margin-left: 0.5rem;
+    transition: opacity 0.3s, max-width 0.3s;
+    white-space: nowrap;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.cta-buttons a:hover {
+    width: 180px;
+    border-radius: 2rem;
+    background: var(--btn-hover);
+}
+
+.cta-buttons a:hover .cta-text {
+    opacity: 1;
+    max-width: 140px;
+}
+
+.btn-primary,
+.btn-secondary {
+    padding: 0.7rem 1.5rem;
+    border-radius: 2rem;
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: background 0.3s, color 0.3s;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.btn-primary {
+    background: var(--accent);
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background: var(--btn-hover);
+    color: #fff;
+}
+
+.btn-secondary {
+    background: transparent;
+    color: var(--accent);
+    border: 2px solid var(--accent);
+}
+
+.btn-secondary:hover {
+    background: var(--accent);
+    color: #fff;
+}
+
+footer {
+    background: var(--text);
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0 1rem 0;
+    margin-top: 4rem;
+    box-shadow: 0 -2px 16px rgba(0,0,0,0.04);
+}
+
+footer p {
+    margin: 0 0 1rem 0;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+footer .social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+footer .social-btn {
+    background: var(--text);
+    color: var(--accent);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s, color 0.3s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    font-size: 1.3rem;
+    vertical-align: middle;
+}
+
+footer .social-btn i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+footer .social-btn:hover {
+    background: var(--btn-hover);
+    color: #fff;
+}
+
