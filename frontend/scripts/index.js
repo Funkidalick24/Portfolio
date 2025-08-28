@@ -7,6 +7,7 @@ loadPartial("site-header", "partials/header.html").then(() => {
     if (hamburger && navLinks) {
         hamburger.addEventListener('click', () => {
             navLinks.classList.toggle('open');
+            hamburger.classList.toggle('open'); // <-- Add this line
         });
     }
 });

@@ -1,7 +1,14 @@
+/* Hamburger base style */
 .hamburger {
-    display: flex;
     width: 36px;
     height: 36px;
+    background: none;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1001;
 }
 
 .hamburger span {
@@ -9,6 +16,21 @@
     height: 3px;
     margin: 4px 0;
     background: var(--text, #333);
+    border-radius: 2px;
+    display: block;
+    transition: transform 0.4s cubic-bezier(.4,2,.6,1), opacity 0.4s cubic-bezier(.4,2,.6,1), background 0.4s;
+    position: relative;
+}
+
+/* Hamburger to X animation */
+.hamburger.open span:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+}
+.hamburger.open span:nth-child(2) {
+    opacity: 0;
+}
+.hamburger.open span:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
 }
 
 .nav-links {
@@ -31,15 +53,22 @@
 .profile-intro-wrapper {
     flex-direction: column;
     align-items: center;
-    gap: 1.5rem;
+    gap: 1rem;
+    margin: 1rem;
 }
 
 .responsive-profile-img {
-    width: 140px;
-    height: 140px;
+    width: 100px;
+    height: 100px;
 }
 
 .intro {
     padding: 1rem;
     font-size: 1rem;
+}
+
+/* home-small.css */
+.navbar {
+    margin-bottom: 1.5rem;
+    padding: 0.5rem 1rem;
 }
