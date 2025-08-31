@@ -6,6 +6,7 @@ const PORT = process.env.PORT || 3000;
 
 // Serve static files from the frontend directory
 app.use(express.static(path.join(__dirname, 'frontend')));
+app.use('/data', express.static(path.join(__dirname, 'frontend', 'data')));
 app.use('/partials', express.static(path.join(__dirname, 'frontend', 'partials')));
 
 // Default route to index.html

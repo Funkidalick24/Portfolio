@@ -1,0 +1,53 @@
+[
+    {
+        "id": 1,
+        "title": "Personal Portfolio Website",
+        "description": "A responsive portfolio website to showcase my projects and skills.",
+        "technologies": ["React", "CSS", "JavaScript"],
+        "image": "/images/portfolio.png",
+        "github": "https://github.com/username/portfolio",
+        "demo": "https://username.github.io/portfolio"
+    },
+    {
+        "id": 2,
+        "title": "E-commerce Store",
+        "description": "A full-stack e-commerce application with shopping cart and payment integration.",
+        "technologies": ["Node.js", "Express", "MongoDB", "React"],
+        "image": "/images/ecommerce.png",
+        "github": "https://github.com/username/ecommerce-store",
+        "demo": "https://ecommerce-demo.com"
+    },
+    {
+        "id": 3,
+        "title": "Task Manager App",
+        "description": "A simple task manager app to track daily tasks and productivity.",
+        "technologies": ["Vue.js", "Firebase"],
+        "image": "/images/taskmanager.png",
+        "github": "https://github.com/username/task-manager",
+        "demo": "https://taskmanager-demo.com"
+    },
+    {
+        "title": "Portfolio Website",
+        "description": "A personal portfolio to showcase my projects and skills.",
+        "image": "images/portfolio.jpg",
+        "github": "https://github.com/yourusername/portfolio",
+        "live": "https://your-portfolio.com",
+        "type": "self"
+    },
+    {
+        "title": "E-Commerce Platform",
+        "description": "A full-stack e-commerce application built for a client.",
+        "image": "images/ecommerce.jpg",
+        "github": "https://github.com/yourusername/ecommerce",
+        "live": "https://ecommerce-demo.com",
+        "type": "professional"
+    },
+    {
+        "title": "Data Analysis Project",
+        "description": "A data analysis project completed as part of a university course.",
+        "image": "images/data-analysis.jpg",
+        "github": "https://github.com/yourusername/data-analysis",
+        "live": "https://data-analysis-demo.com",
+        "type": "school"
+    }
+]
