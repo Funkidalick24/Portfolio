@@ -6,7 +6,7 @@
         "technologies": ["React", "CSS", "JavaScript"],
         "image": "/images/portfolio.png",
         "github": "https://github.com/username/portfolio",
-        "demo": "https://username.github.io/portfolio"
+        "live": "https://username.github.io/portfolio"
     },
     {
         "id": 2,
@@ -15,7 +15,7 @@
         "technologies": ["Node.js", "Express", "MongoDB", "React"],
         "image": "/images/ecommerce.png",
         "github": "https://github.com/username/ecommerce-store",
-        "demo": "https://ecommerce-demo.com"
+        "live": "https://ecommerce-demo.com"
     },
     {
         "id": 3,
@@ -24,7 +24,7 @@
         "technologies": ["Vue.js", "Firebase"],
         "image": "/images/taskmanager.png",
         "github": "https://github.com/username/task-manager",
-        "demo": "https://taskmanager-demo.com"
+        "live": "https://taskmanager-demo.com"
     },
     {
         "title": "Portfolio Website",

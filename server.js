@@ -9,9 +9,34 @@ app.use(express.static(path.join(__dirname, 'frontend')));
 app.use('/data', express.static(path.join(__dirname, 'frontend', 'data')));
 app.use('/partials', express.static(path.join(__dirname, 'frontend', 'partials')));
 
-// Default route to index.html
+// Routes for all pages
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'frontend', 'index.html'));
+});
+
+app.get('/about', (req, res) => {
+  res.sendFile(path.join(__dirname, 'frontend', 'about.html'));
+});
+
+app.get('/projects', (req, res) => {
+  res.sendFile(path.join(__dirname, 'frontend', 'projects.html'));
+});
+
+app.get('/contact', (req, res) => {
+  res.sendFile(path.join(__dirname, 'frontend', 'contact.html'));
+});
+
+// Handle .html extensions as well
+app.get('/about.html', (req, res) => {
+  res.sendFile(path.join(__dirname, 'frontend', 'about.html'));
+});
+
+app.get('/projects.html', (req, res) => {
+  res.sendFile(path.join(__dirname, 'frontend', 'projects.html'));
+});
+
+app.get('/contact.html', (req, res) => {
+  res.sendFile(path.join(__dirname, 'frontend', 'contact.html'));
 });
 
 app.listen(PORT, () => {

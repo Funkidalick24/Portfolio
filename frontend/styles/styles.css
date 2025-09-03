@@ -1,72 +1,13 @@
-:root {
-    /* Bright & Friendly Theme Variables */
-    --bg: #F5F5F5;
-    --text: #333333;
-    --accent: #f9dcda;
-    --btn-hover: #f89d95;
-    --link: #007ACC;
-}
+@import url('layout.css');
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+:root {
+    --bg: #F5F5F5;
+    --text: #222222;
 }
 
 body {
     background-color: var(--bg);
     color: var(--text);
-}
-
-a {
-    text-decoration: none;
-    color: var(--link);
-}
-
-ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-}
-
-.navbar {
-    background: transparent;
-    box-shadow: none;
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 3rem; /* Add space below navbar */
-}
- .navbar h2{
-    color: var(--text);
-    font-size: 1.5rem;
-    font-weight: 600;
- }
-.nav-links {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    margin-right: 0;
-}
-
-.nav-links li a {
-    color: var(--text);
-    background: transparent;
-    padding: 0.5rem 1rem;
-    border-radius: 0.5rem;
-    transition: background 0.3s, color 0.3s;
-    font-weight: 500;
-}
-
-.nav-links li a:hover,
-.nav-links li a.active {
-    background: var(--btn-hover);
-    color: #fff;
 }
 
 .profile-intro-wrapper {
@@ -117,180 +58,6 @@ ul {
     margin-bottom: 2rem;
 }
 
-.social-buttons {
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-}
-
-.social-btn,
-.cta-buttons a {
-    position: relative;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0.7rem;
-    border-radius: 50%;
-    font-size: 1.3rem;
-    background: var(--accent);
-    color: var(--link);
-    border: none;
-    outline: none;
-    cursor: pointer;
-    width: 48px;
-    height: 48px;
-    transition: width 0.3s, background 0.3s, color 0.3s;
-    overflow: hidden;
-    text-decoration: none;
-    font-weight: 600;
-    vertical-align: middle;
-}
-
-.social-btn i,
-.cta-buttons a i {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 24px;
-    height: 24px;
-    font-size: 1.3rem;
-    margin: 0;
-}
-
-.social-btn .social-text {
-    opacity: 0;
-    max-width: 0;
-    margin-left: 0.5rem;
-    transition: opacity 0.3s, max-width 0.3s;
-    white-space: nowrap;
-    color: #fff;
-    font-size: 1rem;
-}
-
-.social-btn:hover {
-    width: 180px;
-    border-radius: 2rem;
-    background: var(--btn-hover);
-}
-
-.social-btn:hover .social-text {
-    opacity: 1;
-    max-width: 140px;
-}
-
-.cta-buttons {
-    display: flex;
-    gap: 1rem;
-}
-
-.cta-buttons a .cta-text {
-    opacity: 0;
-    max-width: 0;
-    margin-left: 0.5rem;
-    transition: opacity 0.3s, max-width 0.3s;
-    white-space: nowrap;
-    color: #fff;
-    font-size: 1rem;
-}
-
-.cta-buttons a:hover {
-    width: 180px;
-    border-radius: 2rem;
-    background: var(--btn-hover);
-}
-
-.cta-buttons a:hover .cta-text {
-    opacity: 1;
-    max-width: 140px;
-}
-
-.btn-primary,
-.btn-secondary {
-    padding: 0.7rem 1.5rem;
-    border-radius: 2rem;
-    font-weight: 600;
-    font-size: 1rem;
-    text-decoration: none;
-    transition: background 0.3s, color 0.3s;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    display: inline-block;
-}
-
-.btn-primary {
-    background: var(--accent);
-    color: #fff;
-}
-
-.btn-primary:hover {
-    background: var(--btn-hover);
-    color: #fff;
-}
-
-.btn-secondary {
-    background: transparent;
-    color: var(--accent);
-    border: 2px solid var(--accent);
-}
-
-.btn-secondary:hover {
-    background: var(--accent);
-    color: #fff;
-}
-
-footer {
-    background: var(--text);
-    color: #fff;
-    text-align: center;
-    padding: 2rem 0 1rem 0;
-    margin-top: 4rem;
-    box-shadow: 0 -2px 16px rgba(0,0,0,0.04);
-}
-
-footer p {
-    margin: 0 0 1rem 0;
-    font-size: 1rem;
-    letter-spacing: 1px;
-}
-
-footer .social-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-bottom: 0.5rem;
-}
-
-footer .social-btn {
-    background: var(--text);
-    color: var(--accent);
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    transition: background 0.3s, color 0.3s;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-    font-size: 1.3rem;
-    vertical-align: middle;
-}
-
-footer .social-btn i {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 20px;
-    height: 20px;
-    font-size: 1.1rem;
-    margin: 0;
-}
-
-footer .social-btn:hover {
-    background: var(--btn-hover);
-    color: #fff;
-}
-
 #cards-section {
     display: flex;
     gap: 2rem;
@@ -301,8 +68,9 @@ footer .social-btn:hover {
 
 .card {
     background: #fff;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 16px rgba(44,44,44,0.10);
     border-radius: 1rem;
-    box-shadow: 0 2px 16px rgba(0,0,0,0.08);
     padding: 2rem 1.5rem;
     width: 320px;
     display: flex;
@@ -327,7 +95,7 @@ footer .social-btn:hover {
 .card-title {
     font-size: 1.3rem;
     font-weight: 600;
-    color: var(--accent);
+    color: var(--text);
     margin-bottom: 0.7rem;
     text-align: center;
 }
@@ -346,13 +114,13 @@ footer .social-btn:hover {
 }
 
 .card-link {
-    color: var(--accent);
+    color: var(--text);
     font-size: 1.3rem;
     transition: color 0.2s;
 }
 
 .card-link:hover {
-    color: var(--btn-hover);
+    color: var(--text);
 }
 
 #quote-section {
@@ -391,8 +159,9 @@ footer .social-btn:hover {
   width: 100%;
   backface-visibility: hidden;
   background: #fff;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 2px 16px rgba(44,44,44,0.10);
   border-radius: 1rem;
-  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
   padding: 2rem 1.5rem;
   min-height: 120px;
   display: flex;
@@ -403,5 +172,36 @@ footer .social-btn:hover {
 .quote-card-back {
   transform: rotateY(180deg);
   color: var(--text);
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text);
+    text-align: center;
+    margin: 3rem 0 2rem 0;
+    letter-spacing: 1px;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.08);
+}
+
+#projects-section, #quotes-carousel-section {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto 3rem auto;
+    padding: 0 1rem;
+}
+
+@media (max-width: 900px) {
+  .section-title {
+    font-size: 1.5rem;
+    margin: 2rem 0 1.5rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 1.2rem;
+    margin: 1.2rem 0 1rem 0;
+  }
 }
 
